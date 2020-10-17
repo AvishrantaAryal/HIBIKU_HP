@@ -76,7 +76,7 @@ Add Service
                 <div class="text text-danger">{{$errors->first('summary')}}</div>
 
                 <div class="col-sm-9">
-                 <textarea class="form-control" rows="8" name="summary" required="" >
+                 <textarea id="summernote3" rows="8" name="summary" required="" >
                   {{old('summary')}}
                 </textarea>
               </div>
@@ -88,7 +88,7 @@ Add Service
               <div class="text text-danger">{{$errors->first('summary_japanese')}}</div>
 
               <div class="col-sm-9">
-               <textarea class="form-control" rows="8" name="summary_japanese" required="" >
+               <textarea id="summernote2" rows="8" name="summary_japanese" required="" >
                 {{old('summary_japanese')}}
               </textarea>
             </div>
@@ -286,7 +286,7 @@ Add Service
                 <div class="text text-danger">{{$errors->first('summary')}}</div>
 
                 <div class="col-sm-9">
-                 <textarea class="form-control" rows="8" name="summary" required="" >
+                 <textarea id="summernote3" name="summary" required="" >
                   {{old('summary')}}
                 </textarea>
               </div>
@@ -298,7 +298,7 @@ Add Service
               <div class="text text-danger">{{$errors->first('summary_japanese')}}</div>
 
               <div class="col-sm-9">
-               <textarea class="form-control" rows="8" name="summary_japanese" required="" >
+               <textarea id="su,,ernote2" name="summary_japanese" required="" >
                 {{old('summary_japanese')}}
               </textarea>
             </div>

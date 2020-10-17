@@ -42,7 +42,7 @@ trait servicetrait{
 	{
 		if($check = Service::where('id',$id)->get()->first())
 		{
-			return view('cd-admin.news.edit-service',compact('check'));
+			return view('cd-admin.service.edit-service',compact('check'));
 		}
 	}
 

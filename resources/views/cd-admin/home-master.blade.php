@@ -169,6 +169,18 @@
 
         });
     </script>
+    <script>
+      $(document).ready(function() {
+      $('#summernote2').summernote();
+
+        });
+    </script>
+    <script>
+      $(document).ready(function() {
+      $('#summernote3').summernote();
+
+        });
+    </script>
 </script>
 <!-- InputMask -->
 <script src="{{url('public/cd-admin/admin/plugins/input-mask/jquery.inputmask.js')}}"></script>

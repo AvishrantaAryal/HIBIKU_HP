@@ -37,22 +37,22 @@
 				<img src="{{url('uploads/'.$getonecarosels['image'])}}" class="d-block w-100" alt="{{$getonecarosels['altimage']}}">
 				<div class="carousel-caption d-none d-md-block">
 					@if(App::isLocale('en'))
-					<p style="color: #ffff;">For Japan, For Asia country </p>
+					<h1 style="color: #ffff;">For Japan, For Asia country </h1>
 					@elseif(App::isLocale('jp'))
-					<p style="color: #ffff;">日本とアジアのために </p>
+					<h1 style="color: #ffff;">日本とアジアのために </h1>
 					@endif
 				</div>
 			</div>
 			
 			@foreach($getcarosels as $car)	
 			<div class="carousel-item home-carousel-image">
-				<img src="{{url('uploads/'.$getonecarosels['image'])}}" class="d-block w-100" alt="$car['altimage']">
+				<img src="{{url('uploads/'.$car['image'])}}" class="d-block w-100" alt="$car['altimage']">
 				<div class="carousel-caption d-none d-md-block">
 					
 					@if(App::isLocale('en'))
-					<p style="color: #ffff;">For Japan, For Asia country </p>
+					<h1 style="color: #ffff;">For Japan, For Asia country </h1>
 					@elseif(App::isLocale('jp'))
-					<p style="color: #ffff;">日本とアジアのために </p>
+					<h1 style="color: #ffff;">日本とアジアのために </h1>
 					@endif
 				</div>
 			</div>
@@ -78,75 +78,19 @@
 
 
 
-
-
-
-<div class="container pa-b">
-	<div class="row">
-		
-		<div class="col-md-4 card">
-			<div class="home-about-text">
-				@if(App::isLocale('en'))
-				<h2>Greetings</h2>
-				<p>{{$about['greetings']}}</p>
-				<p style="float: right;">----CEO / Founder Shinichiro Yamano</p>
-				@elseif(App::isLocale('jp'))
-				<h2>ご挨拶</h2>
-				<p>{{$about['greetings_japanese']}}</p>
-				<p style="float: right;">---代表取締役　山野　新一郎</p>
-				@endif
-
-
-			</div>
-
-		</div>
-		<div class="col-md-2"></div>
-		<div class="col-md-6 card">
-			<div class="home-about-text">
-				@if(App::isLocale('en'))
-				<h2>HIBIKU`S Three Policies </h2>
-				<p>{!!$about['hibikus_policy']!!}</p>
-				@elseif(App::isLocale('jp'))
-				<h2>ヒビクの３つのポリシー</h2>
-				<p>{!!$about['hibikus_policy_japanese']!!}</p>
-
-				@endif
-
-
-
-
-			</div>
-			<div class="home-about-image">
-				<img src="{{url('uploads/'.$about['image'])}}" class="img-fluid" alt="{{$about['altimage']}}">
-
-			</div>
-			<center>
-				<div class="new-default-btn" style="margin-top: 10px;">
-					<a href="{{url('about')}}"><p>Learn More</p></a>
-				</div>
-			</center>
-
-		</div>
-
-
-
-	</div>
-</div>
-
-
-
 <div class="container pa-b home-blog-post-title">
 	@if(App::isLocale('en'))
-	<h2>Latest News</h2>
+	<h2 style="text-align: center;">Latest News</h2>
 	@elseif(App::isLocale('jp'))
 	<h2>最新ニュース</h2>
 	@endif
 	
 	<div class="row">
 		@foreach($news as $new)
-		<div class="col-md-4 card">
+		<div class="col-md-4 card" style="margin-left: 2px;">
 			<a href="{{url('news-details/'.$new['slug'])}}">
 				<div class="home-blog-post-card">
+
 					<div class="home-blog-post-image">
 						<img src="{{url('uploads/'.$new['image'])}}" class="img-fluid" alt="{{$new['altimage']}}">
 					</div>

@@ -44,7 +44,7 @@
 
 	<div class="blog-dynamic-content-card">
 		<div class="blog-dynamic-content-image">
-			<img src="{{url('uploads/'.$blog['image'])}}" alt="{{$blog['altimage']}}" class="img-fluid">
+			<img src="{{url('uploads/'.$blog['image'])}}" alt="----" class="img-fluid">
 		</div>
 		@if(App::isLocale('en'))
 		<p>{!!$blog['description']!!}</p>
@@ -67,7 +67,7 @@
 			<a href="{{url('news-details/'.$blos['slug'])}}">
 				<div class="blog-list-card">
 					<div class="blog-list-image">
-						<img src="{{url('uploads/'.$blos['image'])}}" class="img-fluid" alt="{{$blo['altimage']}}">
+						<img src="{{url('uploads/'.$blos['image'])}}" class="img-fluid" alt="....">
 					</div>
 					<div class="blog-list-text">
 						{{ \Carbon\Carbon::parse($blos['created_at'])->format('j F, Y') }}</p>

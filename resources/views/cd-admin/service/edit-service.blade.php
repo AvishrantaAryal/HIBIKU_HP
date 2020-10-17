@@ -78,7 +78,7 @@ Edit Service
             <div class="text text-danger">{{$errors->first('summary')}}</div>
 
             <div class="col-sm-9">
-             <textarea class="form-control" name="summary" required="" >
+             <textarea id="summernote3" name="summary" required="" >
               {{$check['summary']}}
             </textarea>
           </div>
@@ -89,7 +89,7 @@ Edit Service
           <div class="text text-danger">{{$errors->first('summary_japanese')}}</div>
 
           <div class="col-sm-9">
-           <textarea class="form-control" name="summary_japanese" required="" >
+           <textarea id="summernote2" name="summary_japanese" required="" >
             {{$check['summary_japanese']}}
           </textarea>
         </div>
@@ -111,7 +111,7 @@ Edit Service
       <div class="text text-danger">{{$errors->first('description_japanese')}}</div>
 
       <div class="col-sm-9">
-       <textarea id="summernote" class="form-control" name="description_japanese" required="" >
+       <textarea id="summernote1" class="form-control" name="description_japanese" required="" >
         {{$check['description_japanese']}}
       </textarea>
     </div>
@@ -285,7 +285,7 @@ Edit Service
             <div class="text text-danger">{{$errors->first('summary')}}</div>
 
             <div class="col-sm-9">
-             <textarea class="form-control" name="summary" required="" >
+             <textarea id="summernote3" name="summary" required="" >
               {{$check['summary']}}
             </textarea>
           </div>
@@ -296,7 +296,7 @@ Edit Service
           <div class="text text-danger">{{$errors->first('summary_japanese')}}</div>
 
           <div class="col-sm-9">
-           <textarea class="form-control" name="summary_japanese" required="" >
+           <textarea id="summernote2" name="summary_japanese" required="" >
             {{$check['summary_japanese']}}
           </textarea>
         </div>
@@ -318,7 +318,7 @@ Edit Service
       <div class="text text-danger">{{$errors->first('description_japanese')}}</div>
 
       <div class="col-sm-9">
-       <textarea id="summernote" class="form-control" name="description_japanese" required="" >
+       <textarea id="summernote1" class="form-control" name="description_japanese" required="" >
         {{$check['description_japanese']}}
       </textarea>
     </div>

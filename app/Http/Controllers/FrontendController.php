@@ -24,6 +24,21 @@ class FrontendController extends Controller
 		return view('home.home',compact('getonecarosels','getcarosels','about','news','seo'));
 	}
 
+
+	public function greetings(){
+		$about = About::get()->first();
+		$seo = Seo::where('name','Home')->get()->first();
+		return view('about.greetings',compact('about','seo'));	
+
+	}
+
+	public function policy(){
+		$about = About::get()->first();
+		$seo = Seo::where('name','Home')->get()->first();
+		return view('about.hibiku_policy',compact('about','seo'));	
+
+	}
+
 	public function about(){
 		$seo = Seo::where('name','company')->get()->first();
 		$profile = Profile::get()->first();

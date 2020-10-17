@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
 
+
+
 :root{
   --primary-color: #193660; /*rgba(25, 54, 96, 1)*/
   --secondary-color: #8dd64f; /*rgba(141, 214, 79, 1)*/
@@ -20,13 +22,13 @@ html{
 h1,h2,h3,h4,h5,h6{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: #000;
+  color: #A9A9A9; 
 }
 
 
 p{
   font-family: 'Poppins', sans-serif;
-  color: #39424a;
+  color:#A9A9A9;
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -76,7 +78,7 @@ span{
 
 .new-default-btn a>p{
   display: inline-block;
-  background: linear-gradient( #8dd64f 0%, #8dd64f 49%, #193660 51%, #193660 100%);
+  background: rgba(70,78,84,.88);
   background-size: 100% 200%;
   color: #fff;
   font-weight: 700;
@@ -118,7 +120,7 @@ span{
   filter: brightness(100);
 }
 .header-navbar-bg{
-  background-color: #ffffff;
+  background-color: rgba(70,78,84,.88); 
 }
 .header-navbar-bg nav{
   background: rgba(0,0,0,0)!important;
@@ -131,7 +133,7 @@ span{
   margin-left: 15px;
 }
 .header-navbar-menu ul>li>a{
-  color: #12b9cd!important;
+  color: #ffff !important;
   font-weight: 600;
     font-size: 20px !important;
 
@@ -162,7 +164,7 @@ span{
   color: rgba(255,255,255,1);
 }
 .footer-copyright-bg{
-  background: #064148;
+  background: rgba(70,78,84,.88);;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -435,6 +437,8 @@ span{
 .home-blog-post-title h4{
   text-align: center;
 }
+
+
 .home-blog-post-card{
   margin-top: 30px;
   padding: 15px;
@@ -463,9 +467,8 @@ span{
 
 
 .home-request-form-bg{
-background: #00B4DB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background:rgba(70,78,84,.88); 
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -500,7 +503,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 
 .blog-list-title h2{
   text-align: center;
-  color: var(--primary-color);
+  color: #A9A9A9  ; 
 }
 .blog-list-card{
   margin-top: 30px;
@@ -536,16 +539,16 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 
 .blog-dynamic-title h2{
   text-align: center;
-  color: var(--primary-color);
+  color: rgba(70,78,84,.88); 
 }
 .blog-dynamic-title p{
+  color: rgba(70,78,84,.88); 
   text-align: center;
 }
 .blog-dynamic-content-card{
   margin-top: 30px;
 }
 .blog-dynamic-content-image{
-  height: 300px;
   overflow: hidden;
 }
 .blog-dynamic-content-image img{
@@ -726,7 +729,7 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
 
 #contact button#submit {
   display: inline-block;
-  background: linear-gradient( #8dd64f 0%, #8dd64f 49%, #193660 51%, #193660 100%);
+  background: rgba(70,78,84,.88); 
   background-size: 100% 200%;
   color: #fff;
   font-weight: 700;

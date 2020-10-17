@@ -22,17 +22,17 @@
 		
 		@foreach($service as $new)
 		<div class="col-md-6">
-			<a href="{{url('service-details/'.$new['slug'])}}">
+			
 				<div class="blog-list-card">
 					
 					<div class="blog-list-text">
 						
 
 						<h4>{{$new['title']}}</h4>
-						<p style="text-align: justify;">	{{$new['summary']}}</p>
+						<p style="text-align: justify;">	{!!$new['summary']!!}</p>
 					</div>
 				</div>
-			</a>
+			<a href="{{url('service-details/'.$new['slug'])}}"> Click here for details</a>
 		</div>
 		@endforeach
 
@@ -58,6 +58,7 @@
 <!-- page content -->
 @section('content')
 
+
 <div class="container pa-t pa-b blog-list-title">
 	<h2>私たちのサービスを読む</h2>
 
@@ -65,19 +66,21 @@
 	<div class="row">
 		
 		@foreach($service as $new)
+
 		<div class="col-md-6">
-			<a href="{{url('news-details/'.$new['slug'])}}">
+			
 				<div class="blog-list-card">
 					
 					<div class="blog-list-text">
-
+						
 
 						<h4>{{$new['title_japanese']}}</h4>
-						<p style="text-align: justify;">	{{$new['summary_japanese'] }}</p>
+						<p style="text-align: justify;">	{!!$new['summary_japanese'] !!}</p>
 					</div>
 				</div>
-			</a>
+			<a href="{{url('service-details/'.$new['slug'])}}"> Click here for details</a>
 		</div>
+
 		@endforeach
 
 		

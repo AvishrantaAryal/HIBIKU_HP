@@ -21,6 +21,8 @@ Route::get('/partner','FrontendController@partner');
 Route::get('/about','FrontendController@about');
 Route::get('/gallery','FrontendController@album');
 Route::get('gallery/{slug}','FrontendController@gallery');
+Route::get('/greetings','FrontendController@greetings');
+Route::get('/policies','FrontendController@policy');
 
 Route::get('/contact','FrontendController@contact');
 Route::get('locale/{locale}',function($locale){
